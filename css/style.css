@@ -1,0 +1,108 @@
+/* importar fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* importar fontes */
+
+
+/* importante */
+html{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+/* importante */
+
+
+/* ======= menu ======== */
+
+#menu{
+  margin: 0 10vw;
+  color: rgb(250, 254, 255);
+  align-items: center;
+  justify-content: space-around;
+  background-color: #205430;
+  flex-direction: row;
+  display: flex;
+  width: 80vw;
+  height: 7vh;
+  top: 0px;
+  position: fixed;
+  border-radius: 0 0   20px 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  #menu{
+  margin: 0;
+  color: rgb(250, 254, 255);
+  align-items: center;
+  justify-content: space-around;
+  background-color: #205430;
+  flex-direction: row;
+  display: flex;
+  width: 100vw;
+  height: 7vh;
+  top: 0px;
+  position: fixed;
+  border-radius: 0 0   20px 20px;
+}
+}
+
+#menu div{
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  #menu div{
+  width: 10vw;
+  }
+}
+
+#menu div a{
+  color: rgb(250, 254, 255);
+  text-decoration: none;
+}
+
+/* estilos das classes da logo e da logo por id */
+#logo-utp{
+  top: 5px;
+  position: absolute;
+  transition: 0.5s  ease-out;
+}
+
+/* enquanto tiver no banner fica grande */
+.logo-utp-aberto{
+  height: 10vh;
+}
+
+/* quando passar do tamanho maximo fica pequeno */
+.logo-utp-fechado{
+  height: 7vh;
+}
+
+/* ======= menu ======== */
+
+
+/* ======= slick banners ======== */
+
+.slick-banners{
+  width: 100vw;
+  z-index: -1;
+}
+
+/* ======= slick banners ======== */
