@@ -25,5 +25,8 @@ $(document).ready(function(){
   });
 });
 
-$(".slick-banners").slick({})
+$(document).ready(function(){
+  $(".slick-banners").slick({
+  })
+})
 // ========================================================

@@ -3,8 +3,6 @@
 
 ---
 
-
-
 # **1 -> Início**
 
 ## 1.1 figma
@@ -27,13 +25,11 @@ Minha ideia inicial será um site simples para a promoção da tuiuti
 
 ###### **Referencias:**
 
-[Projeto Figma](https://www.figma.com/design/ecqwwUPZIqMdkEomqkTnSm/Ed-1---Programa%C3%A7%C3%A3o-Web?node-id=0-1&t=1TNfxnr1tAZFhXj0-1 "projeto figma") + [google fonts](https://fonts.google.com/selection "google fonts")[
-Fonte - biblioteca de recursos do figma](https://www.figma.com/pt-br/resource-library/melhores-fontes-para-sites/#:~:text=15.%20Object%20Sans-,16.%20Raleway,-17.%20Montserrat "Ir para o link")
-[Imagens em geral - Site Tuiuti](https://tuiuti.edu.br/ "site tuiuti")
+* [Projeto Figma](https://www.figma.com/design/ecqwwUPZIqMdkEomqkTnSm/Ed-1---Programa%C3%A7%C3%A3o-Web?node-id=0-1&t=1TNfxnr1tAZFhXj0-1 "projeto figma") + [google fonts](https://fonts.google.com/selection "google fonts")
+* [Fonte - biblioteca de recursos do figma](https://www.figma.com/pt-br/resource-library/melhores-fontes-para-sites/#:~:text=15.%20Object%20Sans-,16.%20Raleway,-17.%20Montserrat "Ir para o link")
+* [Imagens em geral - Site Tuiuti](https://tuiuti.edu.br/ "site tuiuti")
 
 ---
-
-
 
 ## 1.2 relembrando o jquery
 
@@ -41,9 +37,14 @@ Eu fiz um curso + estágio de desenvolvimento web a alguns anos, durante o curso
 
 Após relembrar um pouco do jquery eu quebrei a cabeça para conseguir realizar minha seguinte ideia:
 
-> Eu quero que meu cabeçalho/menu do site tenha uma logo da tuiuti, só que ela saia do menu e quando o usuário scrollar para baixo ela 
+> Eu quero que meu cabeçalho/menu do site tenha uma logo da tuiuti, só que ela saia do menu e quando o usuário scrollar para baixo ela
+
+No início eu sofri muito para conseguir fazer o menu, pois faz algum tempo que não mecho com css, após fazer a formatação do menu eu comecei a fazer a animação da logo.
+A ideia inicial foi a que foi para frente, quando está em cima dos banners ela ganha a classe *logo-utp-aberto* e quando rola para baixo ela perde essa classe e é adicionada a classe *logo-utp-fechado.* Algumas outras ideias que eu tive foram descartadas por eu ter achado essa a solução mais fácil.
+
+Após fazer a logo do menu eu parti para os banners. Para os banners eu usei o plugin **Slick** do jquery, porém tive alguns problemas com ele por ser minha primeira vez utilizando.
 
 ###### **Referencias**:
 
-[Jquery
-](https://jquery.com/)[w3school Jquery Scroll](https://www.w3schools.com/jquery/event_scroll.asp)
+* [Jquery](https://jquery.com/)
+* [w3school Jquery Scroll](https://www.w3schools.com/jquery/event_scroll.asp)
