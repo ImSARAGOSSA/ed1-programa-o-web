@@ -1,43 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  
+
   <!-- caracteres e width pra responsividade -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- caracteres e width pra responsividade -->
-  
+
   <!-- definindo o cabeçalho da pagina -->
   <link rel="icon" href="/imgs//logos/logo-t.png">
   <title>UTP - Formação Humana</title>
   <!-- definindo o cabeçalho da pagina -->
 
   <!-- importaçoes de css principal -->
-  <link rel="stylesheet" href="/css/desktop.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- importaçoes de css principal -->
 
-  <!-- importando script js -->
-   <script src="/js/main.js"></script>
-  <!-- importando script js -->
-  
-  <!-- importando o jquery -->
-  <script src="/js/jquery/jquery-4.0.0.min.js"></script>
-  <!-- importando o jquery -->
+  <!-- importando os plugins -->
+
+  <!-- jquery -->
+  <script src="/plugins/jquery/jquery-4.0.0.min.js"></script>
+
+  <!-- slider -->
+  <link type="text/css" rel="stylesheet" href="plugins/lightslider-master/dist/css/lightslider.css" />          
+  <!-- importando os plugins -->
 
 
 </head>
+
 <body>
   <!--Menu fixo--->
-  <header></header>
+  <section id="menu">
+    <div>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Ajuda</a>
+    </div>
+    <div>
+      <img id="logo-utp" class="logo-utp-fechado" src="/imgs/logos/logo.png" alt="">
+    </div>
+    <div>
+      <p>Universidade Tuiuti Do Paraná</p>
+    </div>
+  </section>
   <!--Menu fixo--->
 
   <!--Corpo principal do site--->
-  <main></main>
+  <main>
+    <!--Slider Dos Banners--->
+    <section id="banners-section">
+      <div id="banners" class="slider-banners">
+        <div>
+          <img src="imgs/banners/banner-ead.jpg" alt="">
+        </div>
+        <div>
+          <img src="imgs/banners/banner-pos.jpg" alt="">
+        </div>
+        <div>
+          <img src="imgs/banners/banner-vestibular.webp" alt="">
+        </div>
+      </div>
+    </section>
+    <!--Slider Dos Banners--->
+  </main>
   <!--Corpo principal do site--->
-  
+
   <!--Rodapé do site--->
   <footer></footer>
   <!--Rodapé do site--->
 
+  <!-- importando os scripts -->
+
+  <!-- scripts do Slider -->
+  <script type="text/javascript" src="plugins/lightslider-master/dist/js/lightslider.js"></script>
+  <!-- script principal -->
+
+  <script src="/js/main.js"></script>
+  <!-- importando os scripts -->
 </body>
+
 </html>

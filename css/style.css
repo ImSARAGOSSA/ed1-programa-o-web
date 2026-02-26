@@ -15,7 +15,7 @@
 }
 html, body{
   width: 100vw;
-  min-height: 100vh;
+  min-height: 1000vh;
   background-color: #000;
   color: aliceblue;
   font-family: 'Raleway', sans-serif;
@@ -43,6 +43,7 @@ html, body{
   height: 7vh;
   top: 0px;
   position: fixed;
+  z-index: 10;
   border-radius: 0 0   20px 20px;
 }
 
@@ -105,19 +106,23 @@ html, body{
 /* ======= menu ======== */
 
 
-/* ======= slick banners ======== */
+/* ======= Slider banners ======== */
+
+#banners-section{
+  background-color: #205430;
+  min-height: 1vh;
+}
 
 
-.slick-banners{
+.slider-banners{
   width: 100vw;
   min-height: 10vh;
   overflow: hidden;
-  z-index: -1;
 }
 
-.slick-banners > div > img{
+.slider-banners > div > img{
   width: 100%;
 }
 
 
-/* ======= slick banners ======== */
+/* ======= Slider banners ======== */
