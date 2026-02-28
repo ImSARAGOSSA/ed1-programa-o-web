@@ -6,17 +6,19 @@
 
 
 /* importante */
-*{
+* {
   color: aliceblue;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
   width: 100vw;
   min-height: 1000vh;
-  background-color: #000;
+  background-color: #13361d;
   color: aliceblue;
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -26,12 +28,13 @@ html, body{
   display: flex;
   flex-direction: column;
 }
+
 /* importante */
 
 
 /* ======= menu ======== */
 
-#menu{
+#menu {
   margin: 0 10vw;
   color: rgb(250, 254, 255);
   align-items: center;
@@ -44,28 +47,19 @@ html, body{
   top: 0px;
   position: fixed;
   z-index: 10;
-  border-radius: 0 0   20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 
 @media screen and (max-width: 800px) {
-  #menu{
-  margin: 0;
-  color: rgb(250, 254, 255);
-  align-items: center;
-  justify-content: space-around;
-  background-color: #205430;
-  flex-direction: row;
-  display: flex;
-  width: 100vw;
-  height: 7vh;
-  top: 0px;
-  position: fixed;
-  border-radius: 0 0   20px 20px;
-}
+  #menu {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
 }
 
-#menu div{
+#menu div {
   width: 20vw;
   display: flex;
   flex-direction: row;
@@ -76,31 +70,73 @@ html, body{
 }
 
 @media screen and (max-width: 800px) {
-  #menu div{
-  width: 10vw;
+  #menu div {
+    width: auto;
+    font-size: 0.7em;
   }
 }
 
-#menu div a{
+#menu div a {
   color: rgb(250, 254, 255);
   text-decoration: none;
 }
 
 /* estilos das classes da logo e da logo por id */
-#logo-utp{
-  top: 5px;
-  position: absolute;
-  transition: 0.5s  ease-out;
+#logo-utp {
+  position: fixed;
+  top: 10px;
+  transition: 0.5s ease-out;
 }
 
 /* enquanto tiver no banner fica grande */
-.logo-utp-aberto{
-  height: 10vh;
+.logo-utp-aberto {
+  height: 11vh;
 }
 
 /* quando passar do tamanho maximo fica pequeno */
-.logo-utp-fechado{
+.logo-utp-fechado {
+  top: 5px !important;
+  height: 6vh;
+}
+
+/* Menu Background */
+
+#menu-back{
   height: 7vh;
+  width: 100vw;
+  background-color: #205430;
+  transition: 0.5s ease-in;
+  z-index: 9;
+  position: fixed;
+}
+
+/* enquanto tiver no banner fica pequeno */
+.menu-back-aberto {
+  opacity: 1;
+}
+
+/* quando passar do tamanho maximo fica grande */
+.menu-back-fechado {
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #logo-utp {
+    position: absolute;
+    transition: 0.5s ease-out;
+  }
+
+
+  /* enquanto tiver no banner fica grande */
+  .logo-utp-aberto {
+    height: 7vh;
+  }
+
+  /* quando passar do tamanho maximo fica pequeno */
+  .logo-utp-fechado {
+    height: 5vh;
+  }
+
 }
 
 /* ======= menu ======== */
@@ -108,19 +144,25 @@ html, body{
 
 /* ======= Slider banners ======== */
 
-#banners-section{
-  background-color: #205430;
+#banners-section {
+  background-color: transparent;
   min-height: 1vh;
 }
 
+@media screen and (max-width: 800px) {
+  #banners-section{
+    margin-top: 5vh;
+  }
+}
 
-.slider-banners{
+
+.slider-banners {
   width: 100vw;
   min-height: 10vh;
   overflow: hidden;
 }
 
-.slider-banners > div > img{
+.slider-banners>div>img {
   width: 100%;
 }
 

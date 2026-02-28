@@ -17,6 +17,10 @@ Assim que fui selecionando as imagens eu criei uma pasta para o projeto e a deix
   /banners/ => banners que selecionei no site da tuiuti
   /imagens/ => imagens diversas
   /logos/ => logos do site e icone
+/js/ => scripts
+/css/ => arquivos de estilização
+/plugins/ => plugins de jquery
+index.html
 ```
 
 Algumas imagens que eu precisei estavam inseridas pelo css do site, então eu precisei inspecionar a pagina e no *background-image* eu selecionei peguei o link da imagem e a coloquei na pasta */imgs/imagens.
@@ -31,18 +35,37 @@ Minha ideia inicial será um site simples para a promoção da tuiuti
 
 ---
 
-## 1.2 relembrando o jquery
+## 1.2 jquery
 
 Eu fiz um curso + estágio de desenvolvimento web a alguns anos, durante o curso eu tive um aprendizado raso em jquery. Como eu não lembrava de muitas coisas eu parti para estudar as funções e sintaxe do jquery no w3school.
 
-Após relembrar um pouco do jquery eu quebrei a cabeça para conseguir realizar minha seguinte ideia:
+Após relembrar um pouco do jquery eu tive a seguinte ideia:
 
 > Eu quero que meu cabeçalho/menu do site tenha uma logo da tuiuti, só que ela saia do menu e quando o usuário scrollar para baixo ela
 
-No início eu sofri muito para conseguir fazer o menu, pois faz algum tempo que não mecho com css, após fazer a formatação do menu eu comecei a fazer a animação da logo.
-A ideia inicial foi a que foi para frente, quando está em cima dos banners ela ganha a classe *logo-utp-aberto* e quando rola para baixo ela perde essa classe e é adicionada a classe *logo-utp-fechado.* Algumas outras ideias que eu tive foram descartadas por eu ter achado essa a solução mais fácil.
+Após a formatação do menu eu comecei a fazer a animação da logo.
+A ideia inicial foi a que foi para frente, quando está em cima dos banners ela ganha a classe *logo-utp-aberto* e quando rola para baixo ela perde essa classe e é adicionada a classe *logo-utp-fechado.* Algumas outras ideias que eu tive foram descartadas.
 
-Após fazer a logo do menu eu parti para os banners. Para os banners eu usei o plugin **Slick** do jquery, porém tive alguns problemas com ele por ser minha primeira vez utilizando.
+```js
+//if para validar se o scroll ja passou ou nao do banner
+    if ($(window).scrollTop() < tamanhoBanner){
+      //aqui remove a classe de fechado e adiciona a aberto
+      $("#logo-utp").addClass("logo-utp-aberto")
+      $("#logo-utp").removeClass("logo-utp-fechado")
+    }else if ($(window).scrollTop() >= tamanhoBanner){
+      //aqui faz o contrario pois deixa pequeno ao invés de grande
+      $("#logo-utp").addClass("logo-utp-fechado");
+      $("#logo-utp").removeClass("logo-utp-aberto");
+    };
+```
+
+---
+
+
+
+
+
+Após fazer a logo do menu eu parti para os banners. Para os banners eu usei o plugin **lightslider-master** do jquery.
 
 ###### **Referencias**:
 
