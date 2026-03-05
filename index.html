@@ -1,85 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <!-- caracteres e width pra responsividade -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- caracteres e width pra responsividade -->
 
-<head>
+    <!-- definindo o cabeçalho da pagina -->
+    <link rel="icon" href="/imgs//logos/logo-t.png" />
+    <title>UTP - Formação Humana</title>
+    <!-- definindo o cabeçalho da pagina -->
 
-  <!-- caracteres e width pra responsividade -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- caracteres e width pra responsividade -->
+    <!-- importaçoes de css principal -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- importaçoes de css principal -->
 
-  <!-- definindo o cabeçalho da pagina -->
-  <link rel="icon" href="/imgs//logos/logo-t.png">
-  <title>UTP - Formação Humana</title>
-  <!-- definindo o cabeçalho da pagina -->
+    <!-- importando os plugins -->
 
-  <!-- importaçoes de css principal -->
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- importaçoes de css principal -->
+    <!-- jquery -->
+    <script src="/plugins/jquery/jquery-4.0.0.min.js"></script>
 
-  <!-- importando os plugins -->
+    <!-- slider -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="plugins/lightslider-master/dist/css/lightslider.css"
+    />
+    <!-- importando os plugins -->
+  </head>
 
-  <!-- jquery -->
-  <script src="/plugins/jquery/jquery-4.0.0.min.js"></script>
-
-  <!-- slider -->
-  <link type="text/css" rel="stylesheet" href="plugins/lightslider-master/dist/css/lightslider.css" />          
-  <!-- importando os plugins -->
-
-
-</head>
-
-<body>
-  <!--Menu fixo--->
-  <section id="menu">
-    <div>
-      <a href="#inicio">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Ajuda</a>
-    </div>
-    <div>
-      <img id="logo-utp" class="logo-utp-aberto" src="/imgs/logos/logo.png" alt="">
-    </div>
-    <div>
-      <p>Universidade Tuiuti Do Paraná</p>
-    </div>
-  </section>
-  <div id="menu-back" class="menu-back-fechado"></div>
-  <!--Menu fixo--->
-
-  <!--Corpo principal do site--->
-  <main>
-    <div id="inicio"></div>
-    <!--Slider Dos Banners--->
-    <section id="banners-section">
-      <div id="banners" class="slider-banners">
-        <div>
-          <img src="imgs/banners/banner-ead.jpg" alt="">
-        </div>
-        <div>
-          <img src="imgs/banners/banner-pos.jpg" alt="">
-        </div>
-        <div>
-          <img src="imgs/banners/banner-vestibular.webp" alt="">
-        </div>
+  <body>
+    <!--Menu fixo--->
+    <section id="menu">
+      <div>
+        <a href="#inicio">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <div>
+        <img
+          id="logo-utp"
+          class="logo-utp-aberto"
+          src="/imgs/logos/logo.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <p>Universidade Tuiuti Do Paraná</p>
       </div>
     </section>
-    <!--Slider Dos Banners--->
-  </main>
-  <!--Corpo principal do site--->
+    <div id="menu-back" class="menu-back-fechado"></div>
+    <!--Menu fixo--->
 
-  <!--Rodapé do site--->
-  <footer></footer>
-  <!--Rodapé do site--->
+    <!--Corpo principal do site--->
+    <main>
+      <div id="inicio"></div>
+      <!--Slider Dos Banners--->
+      <section id="banners-section">
+        <div id="banners" class="slider-banners">
+          <div>
+            <img src="imgs/banners/banner-ead.jpg" alt="" />
+          </div>
+          <div>
+            <img src="imgs/banners/banner-pos.jpg" alt="" />
+          </div>
+          <div>
+            <img src="imgs/banners/banner-vestibular.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--Slider Dos Banners--->
 
-  <!-- importando os scripts -->
+      <section id="sobre">
+        <div class="div-sobre" id="pos-graduacao">
+          <div
+            class="div-sobre-select"
+            id="pos-graduacao-div-1"
+            onclick="abrir-div-sobre('pos-graduacao-div-1')"
+          >
+            <div class="div-sobre-select-img">
+              <img
+                src="/imgs/imagens/thumb-pos-graduacao.png"
+                alt="imagem thumb"
+              />
+            </div>
 
-  <!-- scripts do Slider -->
-  <script type="text/javascript" src="plugins/lightslider-master/dist/js/lightslider.js"></script>
-  <!-- script principal -->
+            <div class="div-sobre-select-span">
+              <div>
+                <span class="thump-span">Pós-Graduação</span>
+              </div>
+            </div>
+          </div>
+          <div class="div-sobre-texto" id="pos-graduacao-div-2">
+            <h2>Um pouco sobre Pós-Graduação na Tuiti</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+              libero leo, eget convallis turpis porta non. Fusce consectetur
+              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+              imperdiet risus sit amet, sodales risus. Praesent erat mi,
+              lobortis in orci quis, pretium auctor felis.
+            </p>
+          </div>
+        </div>
 
-  <script src="/js/main.js"></script>
-  <!-- importando os scripts -->
-</body>
+        <div class="div-sobre" id="graduacao">
+          <div
+            class="div-sobre-select div-sobre-select-aberta"
+            id="graduacao-div-1"
+            onclick="abrir-div-sobre('graduacao-div-1')"
+          >
+            <div class="div-sobre-select-img">
+              <img src="/imgs/imagens/thumb-graduacao.png" alt="imagem thumb" />
+            </div>
 
+            <div class="div-sobre-select-span">
+              <div>
+                <span class="thump-span">Graduação</span>
+              </div>
+            </div>
+          </div>
+          <div class="div-sobre-texto" id="graduacao-div-2">
+            <h2>Um pouco sobre Graduação na Tuiti</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+              libero leo, eget convallis turpis porta non. Fusce consectetur
+              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+              imperdiet risus sit amet, sodales risus. Praesent erat mi,
+              lobortis in orci quis, pretium auctor felis.
+            </p>
+          </div>
+        </div>
+
+        <div class="div-sobre" id="mestrado">
+          <div
+            class="div-sobre-select"
+            id="mestrado-div-1"
+            onclick="abrir-div-sobre('mestrado-div-1')"
+          >
+            <div class="div-sobre-select-img">
+              <img
+                src="/imgs/imagens/thumb-mestrado-doutorado.png"
+                alt="imagem thumb"
+              />
+            </div>
+
+            <div class="div-sobre-select-span">
+              <div>
+                <span class="thump-span">Mestrado</span>
+              </div>
+            </div>
+          </div>
+          <div class="div-sobre-texto" id="mestrado-div-2">
+            <h2>Um pouco sobre Mestrado na Tuiti</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+              libero leo, eget convallis turpis porta non. Fusce consectetur
+              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+              imperdiet risus sit amet, sodales risus. Praesent erat mi,
+              lobortis in orci quis, pretium auctor felis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Corpo principal do site--->
+
+    <!--Rodapé do site--->
+    <footer></footer>
+    <!--Rodapé do site--->
+
+    <!-- importando os scripts -->
+
+    <!-- scripts do Slider -->
+    <script
+      type="text/javascript"
+      src="plugins/lightslider-master/dist/js/lightslider.js"
+    ></script>
+    <!-- script principal -->
+
+    <script src="/js/main.js"></script>
+    <!-- importando os scripts -->
+  </body>
 </html>
