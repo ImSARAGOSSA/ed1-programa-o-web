@@ -51,4 +51,20 @@ $(document).ready(function() {
     pause: 6000,
   });
 });
+
+// ========================================================
+let lastOpenDivSobre = "graduacao"
+
+function toogleClassDivSobre (id) { 
+    $(`#${id}`).toggleClass('div-sobre-aberto');
+    $(`#${id}-div-2`).toggleClass('div-sobre-texto-aberto');
+    $(`#${id}-div-1`).toggleClass('div-sobre-select-fechado');
+ }
+
+function abriDivSobre(id) {
+  toogleClassDivSobre(lastOpenDivSobre)
+  toogleClassDivSobre(id)
+  lastOpenDivSobre = id
+}
+
 // ========================================================
