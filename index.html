@@ -1,221 +1,199 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- caracteres e width pra responsividade -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- caracteres e width pra responsividade -->
 
-    <!-- definindo o cabeçalho da pagina -->
-    <link rel="icon" href="imgs//logos/logo-t.png" />
-    <title>UTP - Formação Humana</title>
-    <!-- definindo o cabeçalho da pagina -->
+<head>
+  <!-- caracteres e width pra responsividade -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- caracteres e width pra responsividade -->
 
-    <!-- importaçoes de css principal -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- importaçoes de css principal -->
+  <!-- definindo o cabeçalho da pagina -->
+  <link rel="icon" href="./imgs//logos/logo-t.png" />
+  <title>UTP - Formação Humana</title>
+  <!-- definindo o cabeçalho da pagina -->
 
-    <!-- importando os plugins -->
+  <!-- importaçoes de css principal -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- importaçoes de css principal -->
 
-    <!-- jquery -->
-    <script src="plugins/jquery/jquery-4.0.0.min.js"></script>
+  <!-- importando os plugins -->
 
-    <!-- searcher -->
-    <script src="plugins/jquery-searcher-0.3.0/dist/jquery.searcher.min.js"></script>
+  <!-- jquery -->
+  <script src="./plugins/jquery/jquery-4.0.0.min.js"></script>
 
-    <!-- slider -->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="plugins/lightslider-master/dist/css/lightslider.css"
-    />
-    <!-- importando os plugins -->
-  </head>
+  <!-- searcher -->
+  <script src="./plugins/jquery-searcher-0.3.0/dist/jquery.searcher.min.js"></script>
 
-  <body>
-    <!--Menu fixo--->
-    <section id="menu">
-      <div>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#ajuda">Ajuda</a>
-      </div>
-      <div>
-        <img
-          id="logo-utp"
-          class="logo-utp-aberto"
-          src="/imgs/logos/logo.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <p>Universidade Tuiuti Do Paraná</p>
+  <!-- slider -->
+  <link type="text/css" rel="stylesheet" href="./plugins/lightslider-master/dist/css/lightslider.css" />
+  <!-- importando os plugins -->
+</head>
+
+<body>
+  <!--Menu fixo--->
+  <section id="menu">
+    <div>
+      <a href="./index.html">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="./ajuda.html">Ajuda</a>
+    </div>
+    <div>
+      <img id="logo-utp" class="logo-utp-aberto" src="./imgs/logos/logo.png" alt="" />
+    </div>
+    <div>
+      <p>UTP</p>
+    </div>
+  </section>
+  <div id="menu-back" class="menu-back-fechado"></div>
+  <!--Menu fixo--->
+
+  <!--Corpo principal do site--->
+  <main>
+    <div id="inicio"></div>
+    <!--Slider Dos Banners--->
+    <section id="banners-section">
+      <div id="banners" class="slider-banners">
+        <div>
+          <img src="./imgs/banners/banner-ead.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./imgs/banners/banner-pos.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./imgs/banners/banner-vestibular.webp" alt="" />
+        </div>
       </div>
     </section>
-    <div id="menu-back" class="menu-back-fechado"></div>
-    <!--Menu fixo--->
+    <!--Slider Dos Banners--->
 
-    <!--Corpo principal do site--->
-    <main>
-      <div id="inicio"></div>
-      <!--Slider Dos Banners--->
-      <section id="banners-section">
-        <div id="banners" class="slider-banners">
-          <div>
-            <img src="imgs/banners/banner-ead.jpg" alt="" />
+    <section id="sobre">
+      <div class="div-sobre" id="pos-graduacao" onclick="abriDivSobre('pos-graduacao')">
+        <div class="div-sobre-select" id="pos-graduacao-div-1">
+          <div class="div-sobre-select-img">
+            <img src="./imgs/imagens/thumb-pos-graduacao.png" alt="imagem thumb" />
           </div>
-          <div>
-            <img src="imgs/banners/banner-pos.jpg" alt="" />
-          </div>
-          <div>
-            <img src="imgs/banners/banner-vestibular.webp" alt="" />
+
+          <div class="div-sobre-select-span">
+            <div>
+              <span class="thump-span">Pós-Graduação</span>
+            </div>
           </div>
         </div>
-      </section>
-      <!--Slider Dos Banners--->
+        <div class="div-sobre-texto" id="pos-graduacao-div-2">
+          <h2>Um pouco sobre Pós-Graduação na Tuiti</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+            tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+            a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+            Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+            libero leo, eget convallis turpis porta non. Fusce consectetur
+            justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+            vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+            imperdiet risus sit amet, sodales risus. Praesent erat mi,
+            lobortis in orci quis, pretium auctor felis.
+          </p>
+        </div>
+      </div>
 
-      <section id="sobre">
-        <div
-          class="div-sobre"
-          id="pos-graduacao"
-          onclick="abriDivSobre('pos-graduacao')"
-        >
-          <div class="div-sobre-select" id="pos-graduacao-div-1">
-            <div class="div-sobre-select-img">
-              <img
-                src="/imgs/imagens/thumb-pos-graduacao.png"
-                alt="imagem thumb"
-              />
-            </div>
-
-            <div class="div-sobre-select-span">
-              <div>
-                <span class="thump-span">Pós-Graduação</span>
-              </div>
-            </div>
+      <div class="div-sobre div-sobre-aberto" id="graduacao" onclick="abriDivSobre('graduacao')">
+        <div class="div-sobre-select div-sobre-select-fechado" id="graduacao-div-1">
+          <div class="div-sobre-select-img">
+            <img src="./imgs/imagens/thumb-graduacao.png" alt="imagem thumb" />
           </div>
-          <div class="div-sobre-texto" id="pos-graduacao-div-2">
-            <h2>Um pouco sobre Pós-Graduação na Tuiti</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
-              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
-              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
-              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
-              libero leo, eget convallis turpis porta non. Fusce consectetur
-              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
-              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
-              imperdiet risus sit amet, sodales risus. Praesent erat mi,
-              lobortis in orci quis, pretium auctor felis.
-            </p>
+
+          <div class="div-sobre-select-span">
+            <div>
+              <span class="thump-span">Graduação</span>
+            </div>
           </div>
         </div>
+        <div class="div-sobre-texto div-sobre-texto-aberto" id="graduacao-div-2">
+          <h2>Um pouco sobre Graduação na Tuiti</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+            tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+            a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+            Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+            libero leo, eget convallis turpis porta non. Fusce consectetur
+            justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+            vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+            imperdiet risus sit amet, sodales risus. Praesent erat mi,
+            lobortis in orci quis, pretium auctor felis.
+          </p>
+        </div>
+      </div>
 
-        <div
-          class="div-sobre div-sobre-aberto"
-          id="graduacao"
-          onclick="abriDivSobre('graduacao')"
-        >
-          <div
-            class="div-sobre-select div-sobre-select-fechado"
-            id="graduacao-div-1"
-          >
-            <div class="div-sobre-select-img">
-              <img src="/imgs/imagens/thumb-graduacao.png" alt="imagem thumb" />
-            </div>
-
-            <div class="div-sobre-select-span">
-              <div>
-                <span class="thump-span">Graduação</span>
-              </div>
-            </div>
+      <div class="div-sobre" id="mestrado" onclick="abriDivSobre('mestrado')">
+        <div class="div-sobre-select" id="mestrado-div-1">
+          <div class="div-sobre-select-img">
+            <img src="./imgs/imagens/thumb-mestrado-doutorado.png" alt="imagem thumb" />
           </div>
-          <div
-            class="div-sobre-texto div-sobre-texto-aberto"
-            id="graduacao-div-2"
-          >
-            <h2>Um pouco sobre Graduação na Tuiti</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
-              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
-              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
-              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
-              libero leo, eget convallis turpis porta non. Fusce consectetur
-              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
-              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
-              imperdiet risus sit amet, sodales risus. Praesent erat mi,
-              lobortis in orci quis, pretium auctor felis.
-            </p>
+
+          <div class="div-sobre-select-span">
+            <div>
+              <span class="thump-span">Mestrado</span>
+            </div>
           </div>
         </div>
-
-        <div class="div-sobre" id="mestrado" onclick="abriDivSobre('mestrado')">
-          <div class="div-sobre-select" id="mestrado-div-1">
-            <div class="div-sobre-select-img">
-              <img
-                src="/imgs/imagens/thumb-mestrado-doutorado.png"
-                alt="imagem thumb"
-              />
-            </div>
-
-            <div class="div-sobre-select-span">
-              <div>
-                <span class="thump-span">Mestrado</span>
-              </div>
-            </div>
-          </div>
-          <div class="div-sobre-texto" id="mestrado-div-2">
-            <h2>Um pouco sobre Mestrado na Tuiti</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              pharetra lacus massa, eget convallis tortor finibus nec. Aenean
-              tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
-              a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
-              Integer sagittis fermentum leo sed mattis. Aenean pellentesque
-              libero leo, eget convallis turpis porta non. Fusce consectetur
-              justo nec mi venenatis sollicitudin. Duis semper dui ac eros
-              vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
-              imperdiet risus sit amet, sodales risus. Praesent erat mi,
-              lobortis in orci quis, pretium auctor felis.
-            </p>
-          </div>
+        <div class="div-sobre-texto" id="mestrado-div-2">
+          <h2>Um pouco sobre Mestrado na Tuiti</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra lacus massa, eget convallis tortor finibus nec. Aenean
+            tincidunt massa enim, quis sollicitudin augue dignissim ut. Nullam
+            a dapibus nisi. Morbi accumsan velit a nisi luctus sodales.
+            Integer sagittis fermentum leo sed mattis. Aenean pellentesque
+            libero leo, eget convallis turpis porta non. Fusce consectetur
+            justo nec mi venenatis sollicitudin. Duis semper dui ac eros
+            vulputate aliquet vel rutrum ante. Duis eget arcu tempus,
+            imperdiet risus sit amet, sodales risus. Praesent erat mi,
+            lobortis in orci quis, pretium auctor felis.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="searcher-section">
-        <div id="tags">
-          <input id="tag-none" type="hidden" class="tag-selected" onclick="selectTag('tag-none')">
-          <span onclick="selectTag('tag-pos')" id="tag-pos">Pós-Graduação</span>
-          <span
-            onclick="selectTag('tag-graduacao')"
-            id="tag-graduacao"
-            >Graduação</span
-          >
-          <span onclick="selectTag('tag-mestrado')" id="tag-mestrado"
-            >Mestrado</span
-          >
-        </div>
-        <input id="search-input" placeholder="Pesquise Seu Curso" />
-        <div id="search-list"></div>
-      </section>
-    </main>
-    <!--Corpo principal do site--->
+    <section id="searcher-section">
+      <div id="tags">
+        <input id="tag-none" type="hidden" class="tag-selected" onclick="selectTag('tag-none')">
+        <span onclick="selectTag('tag-pos')" id="tag-pos">Pós-Graduação</span>
+        <span onclick="selectTag('tag-graduacao')" id="tag-graduacao">Graduação</span>
+        <span onclick="selectTag('tag-mestrado')" id="tag-mestrado">Mestrado</span>
+      </div>
+      <input id="search-input" placeholder="Pesquise Seu Curso" />
+      <div id="search-list"></div>
+    </section>
+  </main>
+  <!--Corpo principal do site--->
 
-    <!--Rodapé do site--->
-    <footer id="ajuda"></footer>
-    <!--Rodapé do site--->
+  <!--Rodapé do site--->
+  <footer id="ajuda">
+    <div id="footer-1">
+      <img src="./imgs/logos/logo-grande.png" alt="">
+      <div id="footer-1-2">
+        <p>© 2025 | Tuiuti do Paraná - Todos os direitos reservados</p>
+        <a target="_blank" href="https://maps.app.goo.gl/3sy8pdY3Etd4Khjv5">Rua Padre Ladislau Kula, Nº 395, Santo Inácio, Curitiba, PR, CEP 82.010-210</a>
+      </div>
+    </div>
+    <!-- https://maps.app.goo.gl/3sy8pdY3Etd4Khjv5 -->
+    <div id="footer-2">
+      <a href="./index.html">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="./ajuda.html">Ajuda </a>
+    </div>
+  </footer>
+  <!--Rodapé do site--->
 
-    <!-- importando os scripts -->
+  <!-- importando os scripts -->
 
-    <!-- scripts do Slider -->
-    <script
-      type="text/javascript"
-      src="plugins/lightslider-master/dist/js/lightslider.js"
-    ></script>
-    <!-- script principal -->
+  <!-- scripts do Slider -->
+  <script type="text/javascript" src="./plugins/lightslider-master/dist/js/lightslider.js"></script>
+  <!-- script principal -->
 
-    <script src="js/main.js"></script>
-    <!-- importando os scripts -->
-  </body>
+  <script src="./js/main.js"></script>
+  <!-- importando os scripts -->
+</body>
+
 </html>

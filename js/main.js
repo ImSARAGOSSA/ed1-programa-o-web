@@ -72,19 +72,17 @@ let lastTagSelected = "tag-none";
 let filter = "";
 
 function splitFilter(id) {
-  filter = lastTagSelected.slice(4, 50)
+  filter = lastTagSelected.slice(4)
   var filterAdaptado = {
     "graduacao":"Graduação",
     "pos": "Pós-Graduação",
     "mestrado": "Mestrado"
   }
-  // console.log(filter)
   if (filter == "graduacao" || filter == "pos" || filter == "mestrado"){
     filter = filterAdaptado[filter]
-    // console.log(filter)
   }
 
-  $("#search-input").val(filter)
+  $("#search-input").val(filter).trigger("input");
 }
 
 function toggleClassTag(id) {
@@ -158,6 +156,66 @@ var cursos = [
     nome: "Engenharia Mecânica",
     modalidade: "Presencial",
     tipo: "Graduação",
+  },
+  {
+    nome: "Biomedicina Estética ",
+    modalidade: "Semipresencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Cardiologia Veterinária",
+    modalidade: "Semipresencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Endodontia",
+    modalidade: "Presencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Iplantodontia",
+    modalidade: "Presencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Harmonização Orofacial",
+    modalidade: "Presencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Fisioterapia Dermatofuncional",
+    modalidade: "Semiresencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Neuropsicologia",
+    modalidade: "Presencial",
+    tipo: "Pós-Graduação",
+  },
+  {
+    nome: "Educação",
+    modalidade: "Presencial",
+    tipo: "Mestrado",
+  },
+  {
+    nome: "Psicologia Forense",
+    modalidade: "Presencial",
+    tipo: "Mestrado",
+  },
+  {
+    nome: "Comunicação e Linguagens",
+    modalidade: "Presencial",
+    tipo: "Mestrado",
+  },
+  {
+    nome: "Mestrado em Odontologia",
+    modalidade: "Precensial",
+    tipo: "Mestrado",
+  },
+  {
+    nome: "Saúde da Comunicação Humana",
+    modalidade: "Precensial",
+    tipo: "Mestrado",
   },
 ];
 
