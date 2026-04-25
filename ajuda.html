@@ -18,6 +18,8 @@
 
   <!-- importando os plugins -->
 
+  <!-- fontaweasome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- jquery -->
   <script src="./plugins/jquery/jquery-4.0.0.min.js"></script>
 
@@ -49,14 +51,61 @@
 
   <!--Corpo principal do site--->
   <main>
-    <section id="social-medias">
-        <div>
-            <p>AAA</p>
-            <a href=""><i></i>aa</a>
-        </div>
-    </section>
     <section id="formulario">
+      <form id="form" action="#">
+        <div id="form-1">
+          <label for="name"><i class="fa-solid fa-caret-right"></i> Seu Nome:</label>
+          <input id="inputText" required type="text" name="name" placeholder="Seu nome aqui">
+          <br>
 
+          <label for="email"><i class="fa-solid fa-caret-right"></i> E-mail:</label>
+          <input id="inputText" required type="email" name="email" placeholder="seuemail@email.com">
+          <br>
+
+          <label for="interesee"><i class="fa-solid fa-caret-right"></i> Interesse</label>
+          <div>
+            <input type="radio" id="graduacao" name="interesse" value="graduacao">
+            <label for="graduacao">Graduação</label>
+          </div>
+
+          <div>
+            <input type="radio" id="pos-graduacao" name="interesse" value="pos-graduacao">
+            <label for="pos-graduacao">Pós-Graduação</label>
+          </div>
+
+          <div>
+            <input type="radio" id="mestrado" name="interesse" value="mestrado">
+            <label for="mestrado">Mestrado</label>          
+          </div>
+        </div>
+        <div id="form-2">
+          <label for="text"><i class="fa-solid fa-caret-right"></i> Deixe sua Mensagem:</label>
+          <br>
+          <textarea required name="text" placeholder="Sua mensagem aqui"></textarea>
+        </div>
+        <input id="btn-enviar" type="submit" value="Enviar">
+      </form>
+    </section>
+    <section id="social">
+        <h1>Siga a Tuiuti:</h1>
+        <div>
+          <a target="_blank" id="a-ig" href="https://instagram.com/universidadetuiuti">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a target="_blank" id="a-yt" href="https://youtube.com/@tuiutiutp">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a target="_blank" id="a-x" href="https://x.com/Tuiuti_UTP">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+
+          <a target="_blank" id="a-fb" href="https://facebook.com/universidadetuiuti/">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </div>
     </section>
   </main>
   <!--Corpo principal do site--->
@@ -67,7 +116,8 @@
       <img src="./imgs/logos/logo-grande.png" alt="">
       <div id="footer-1-2">
         <p>© 2025 | Tuiuti do Paraná - Todos os direitos reservados</p>
-        <a target="_blank" href="https://maps.app.goo.gl/3sy8pdY3Etd4Khjv5">Rua Padre Ladislau Kula, Nº 395, Santo Inácio, Curitiba, PR, CEP 82.010-210</a>
+        <a target="_blank" href="https://maps.app.goo.gl/3sy8pdY3Etd4Khjv5">Rua Padre Ladislau Kula, Nº 395, Santo
+          Inácio, Curitiba, PR, CEP 82.010-210</a>
       </div>
     </div>
     <!-- https://maps.app.goo.gl/3sy8pdY3Etd4Khjv5 -->
@@ -85,7 +135,8 @@
   <script type="text/javascript" src="./plugins/lightslider-master/dist/js/lightslider.js"></script>
   <!-- script principal -->
 
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js">
+  </script>
   <!-- importando os scripts -->
 </body>
 

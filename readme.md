@@ -152,13 +152,21 @@ function selectTag(id) {
 
 Eu criei um footer bem simples, porém funcional que possui a logo, endereço e links para navegação
 
-# **2 -> Página de ajuda **
+# **2 -> Página de ajuda**
 
 ## 1.1 -> Ideia
 
 A página de ajuda vai ser para o usuário entrar em contato via email ou rede sociais da tuiuti  
 
-
 ## 1.2 -> Construção
 
-Irei reutilizar o menu flutuante e o footer da nossa index 
+Irei reutilizar o menu flutuante e o footer da nossa index na nossa nova página: "./ajuda.html".
+
+## 1.3 -> Estilização
+
+Utilizei um layout parecido com o da index, mantendo o design verde e branco. No formulário eu utilizei icones do *Fontaweasome*
+
+###### **Referencias**:
+
+- [Fontaweasome](https://fontawesome.com)
+- [Cdnjs](https://cdnjs.com/libraries/font-awesome)
