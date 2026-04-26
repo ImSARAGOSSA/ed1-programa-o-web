@@ -35,6 +35,7 @@ $(window).ready(function () {
   });
 });
 
+// fazendo o slider com as imagens de banner
 $(document).ready(function () {
   $("#banners").lightSlider({
     item: 1,
@@ -52,32 +53,44 @@ $(document).ready(function () {
 
 // ===============  sobre  =================
 
+// definindo o primeiro card que vai abrir
 let lastOpenDivSobre = "graduacao";
 
+// função de tar toogle nas classes dentro do card
 function toogleClassDivSobre(id) {
   $(`#${id}`).toggleClass("div-sobre-aberto");
   $(`#${id}-div-2`).toggleClass("div-sobre-texto-aberto");
   $(`#${id}-div-1`).toggleClass("div-sobre-select-fechado");
 }
 
+// função que abre o card e fecha o ultimo que estava abert
 function abriDivSobre(id) {
+  // fecha o último
   toogleClassDivSobre(lastOpenDivSobre);
+  // abre o selecionado
   toogleClassDivSobre(id);
+  // salva o que foi aberto
   lastOpenDivSobre = id;
 }
 
 // ====================== tags select ==================
 
+// variavel pra armazenar a ultima tag selecionada
 let lastTagSelected = "tag-none";
+// varivel pra armazenar a o valor da varivel acima depois de dar slice
 let filter = "";
 
+// função de limpar a lastTagSelected
 function splitFilter(id) {
+  // filter cortando o texto "tag-" do id da tag selecionada
   filter = lastTagSelected.slice(4)
+  // array com os possíveis valores para escrever no input
   var filterAdaptado = {
     "graduacao":"Graduação",
     "pos": "Pós-Graduação",
     "mestrado": "Mestrado"
   }
+  // if pra verificar o filter e dentro do filter colocar o texto tratado dentro de filterAdaptado
   if (filter == "graduacao" || filter == "pos" || filter == "mestrado"){
     filter = filterAdaptado[filter]
   }

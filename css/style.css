@@ -323,6 +323,19 @@ body {
   overflow-y: scroll;
 }
 
+#ver-mais{
+  position: absolute;
+  transform: translateY(67vh);
+  animation: arrow 1s 0s infinite ease-out;
+  opacity: 0.8;
+}
+
+@keyframes arrow {
+  30%{
+    transform: translateY(67.2vh);
+  }
+}
+
 .search-item {
   margin: 1%;
   width: 20vw;

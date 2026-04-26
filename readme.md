@@ -160,11 +160,16 @@ A página de ajuda vai ser para o usuário entrar em contato via email ou rede s
 
 ## 1.2 -> Construção
 
-Irei reutilizar o menu flutuante e o footer da nossa index na nossa nova página: "./ajuda.html".
+Irei reutilizar o menu flutuante e o footer da nossa index na nossa nova página: "./ajuda.html". O layout será: 
+
+1. Menu
+2. Formulário
+3. Links
+4. Footer
 
 ## 1.3 -> Estilização
 
-Utilizei um layout parecido com o da index, mantendo o design verde e branco. No formulário eu utilizei icones do *Fontaweasome*
+Utilizei um layout parecido com o da index, mantendo o design verde e branco. No formulário eu utilizei icones do *Fontaweasome, e na section abaixo do formulários eu adicionei links com as redes sociais da tuitui.*
 
 ###### **Referencias**:
 
