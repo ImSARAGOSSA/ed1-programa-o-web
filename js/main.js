@@ -81,7 +81,7 @@ let lastTagSelected = "tag-none";
 let filter = "";
 
 // função de limpar a lastTagSelected
-function splitFilter(id) {
+function chopFilter(id) {
   // filter cortando o texto "tag-" do id da tag selecionada
   filter = lastTagSelected.slice(4)
   // array com os possíveis valores para escrever no input
@@ -95,35 +95,48 @@ function splitFilter(id) {
     filter = filterAdaptado[filter]
   }
 
+  // evento de simular input com o filto
   $("#search-input").val(filter).trigger("input");
 }
 
+// funcao de dat toogle na classe tag-selected
 function toggleClassTag(id) {
   $(`#${id}`).toggleClass("tag-selected");
 }
 
+// funcao de selecionar a tag e tirar a selecao da ultima
 function selectTag(id) {
+  // tira a classe de seleciona
   toggleClassTag(lastTagSelected);
+  // coloca a classe na nova
   toggleClassTag(id);
+  // atualiza a variavel pra conter o valor da categoria selecionada agora
   lastTagSelected = id;
-  splitFilter(id);
+  // coloca no input
+  chopFilter(id);
 }
 
 // ====================== search ==================
 
+// jquery do plugin jquery searcher 
 $("#search-list").searcher({
+  // seletor de itens
   itemSelector: ".search-item",
+  // onde procurar textos
   textSelector: "p, span, small",
+  // input pra pesquisar
   inputSelector: "#search-input",
 
   toggle: function (item, containsText) {
+    // se tem o texto pesquisado ele aparece
     if (containsText) $(item).fadeIn();
+    // se nao tem ele some
     else $(item).fadeOut();
   },
 });
 
 // ========================================================
-
+// array pra guardar todos os cursos
 var cursos = [
   {
     nome: "Análise e Desenvolvimento de sistemas",
@@ -232,7 +245,9 @@ var cursos = [
   },
 ];
 
+// loop pra colocar todos os cursos
 for (i in cursos) {
+  // dentro de search-list coloca o novo item com os textos do curso atual da contagem
   $("#search-list").append(`
   <div class="search-item">
   <span>${cursos[i]["modalidade"]}</span>
