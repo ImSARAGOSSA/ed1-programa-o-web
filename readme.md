@@ -177,3 +177,42 @@ Utilizei um layout parecido com o da index, mantendo o design verde e branco. No
 - [Cdnjs](https://cdnjs.com/libraries/font-awesome)
 
 # **3 -> Página Sobre**
+
+## 1.1 Desing
+
+Fiz o design dessa página pensando na home da tuiuti que possui um vídeo, desenhei um esboço rápido no paint e comecei a montar.
+
+## 1.2 -> Construção
+
+Assim como as outras páginas, elas possuem o mesmo header e footer. Eu construi ela com uma interação hover nos cards mostrando sobre a tuiuti. E logo abaixo uma seção com alguns pontos e o vídeo mencionado acima.
+
+## 1.3 -> Estilização
+
+Eu utilizei um layout parecido com as outras duas páginas, mantendo o mesmo padrão. Coloquei animações 3d com *rotate3D() *no css e algumas outras animações hover nos itens.  
+
+
+###### **Referencias**:
+
+- [W3schools - rotate3d()](https://www.w3schools.com/cssref/func_rotate3d.php)
+
+# **4 -> Considerações finais**
+
+O site foi finalizado em 1 semana, ficando com esse layout no final:
+
+```plaintext
+📁 ED1
+/imgs/
+  /banners/ => banners que selecionei no site da tuiuti
+  /imagens/ => imagens diversas
+  /logos/ => logos do site e icone
+  /backgrounds/ => backgounds
+/js/ => scripts
+/css/ => arquivos de estilização
+/plugins/ => plugins de jquery
+index.html
+ajuda.html
+sobre.html
+readme.md
+```
+
+As imagens foram selecionadas do site da tuiuti, e o background foi feito por minha autoria pelo Figma.
