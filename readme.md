@@ -67,6 +67,7 @@ Após fazer a logo do menu eu parti para os banners. Para os banners eu usei o p
 
 - [Jquery](https://jquery.com/)
 - [w3school Jquery Scroll](https://www.w3schools.com/jquery/event_scroll.asp)
+  ---
 
 ## 1.3 -> Cards
 
@@ -111,6 +112,8 @@ Agora foi a hora de montar a estrutura do site e estilizar com css, eu optei por
 
 Após fazer o banner e menu eu fiz uma seção de cards que abre ao clicar, eu usei jquery para a acão nos cliques (abrir e fechar) dando um toogle na classe que deixa ele aberto.
 
+---
+
 ## 1.4 -> Pesquisa
 
 Construi a parte da criação da pesquisa de cursos, eu utilizei o plugin "jquery-searcher-0.3.0" feito pela comunidade do jquery. Eu fiz uma seleção de categorias que colocam o texto dentro do input e usam o trigger com evento de input para o plugin pesquisar.  
@@ -147,16 +150,21 @@ function selectTag(id) {
 
 - [Jquery](https://api.jquery.com/trigger/)
 - [w3school Jquery](https://www.w3schools.com/jquery)
+  ---
 
 ## 1.5 -> Footer
 
 Eu criei um footer bem simples, porém funcional que possui a logo, endereço e links para navegação
+
+---
 
 # **2 -> Página de ajuda**
 
 ## 1.1 -> Ideia
 
 A página de ajuda vai ser para o usuário entrar em contato via email ou rede sociais da tuiuti  
+
+---
 
 ## 1.2 -> Construção
 
@@ -166,6 +174,7 @@ Irei reutilizar o menu flutuante e o footer da nossa index na nossa nova página
 2. Formulário
 3. Links
 4. Footer
+  ---
 
 ## 1.3 -> Estilização
 
@@ -175,6 +184,7 @@ Utilizei um layout parecido com o da index, mantendo o design verde e branco. No
 
 - [Fontaweasome](https://fontawesome.com)
 - [Cdnjs](https://cdnjs.com/libraries/font-awesome)
+  ---
 
 # **3 -> Página Sobre**
 
@@ -182,18 +192,22 @@ Utilizei um layout parecido com o da index, mantendo o design verde e branco. No
 
 Fiz o design dessa página pensando na home da tuiuti que possui um vídeo, desenhei um esboço rápido no paint e comecei a montar.
 
+---
+
 ## 1.2 -> Construção
 
 Assim como as outras páginas, elas possuem o mesmo header e footer. Eu construi ela com uma interação hover nos cards mostrando sobre a tuiuti. E logo abaixo uma seção com alguns pontos e o vídeo mencionado acima.
+
+---
 
 ## 1.3 -> Estilização
 
 Eu utilizei um layout parecido com as outras duas páginas, mantendo o mesmo padrão. Coloquei animações 3d com *rotate3D() *no css e algumas outras animações hover nos itens.  
 
-
 ###### **Referencias**:
 
 - [W3schools - rotate3d()](https://www.w3schools.com/cssref/func_rotate3d.php)
+  ---
 
 # **4 -> Considerações finais**
 
